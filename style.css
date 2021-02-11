@@ -1,0 +1,250 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url('images/fond_jaune.png');
+    font-family: Arial, Helvetica, sans-serif;
+}
+#bloc_page{
+    width: 900px;
+    margin: auto;
+}
+/*Header*/
+
+header{
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 59px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: -10px;
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+#navbar {
+    display: flex;
+    word-spacing: 10px;
+    margin-top: -30px;
+    list-style-type: none;
+}
+
+.navlist{
+    list-style-type: none;
+    display: flex;
+}
+ 
+#navbar a{
+    font-family: 'Dayrom';
+    text-decoration: none;
+    text-transform: uppercase; /*pour espacer les mots*/
+    color: black;
+    margin-bottom: 30px;
+    word-spacing: 10px;
+    margin-right: 15px;
+    }
+
+/*:hover quand on passe avec la souris dessus*/
+#navbar :hover {
+    color: #760001;
+    text-decoration: underline;
+    }
+
+/*La bannière*/
+.banniere{
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    border-radius: 5px;
+    width: 900px;
+    display: block;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20px;
+    }
+
+.retour {
+    position: absolute;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 20px;
+    margin-top: 40px;
+    padding-top: 15px; 
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    align-items: flex-end;
+    bottom: 0;
+    top: 125px;
+    z-index: 2;
+}
+button {
+    display: block;
+    background: url('images/fond_degraderouge.png');
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    z-index: auto;
+}
+/*section*/
+section{
+    margin: auto;
+    display: flex;
+    left: auto;
+    right: auto;
+    width: 900px;
+    }
+
+
+/*#conteneur {
+    display: flex;
+    flex-direction: row;
+}*/
+
+.epingle{
+    margin-top: 20px;
+    }
+
+.voyageur{
+    font-family: 'Dayrom';
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-top: -35px;
+    margin-left: 60px;
+    }
+
+ aside {
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    float: left;
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: auto;
+    }
+
+.apropos {
+    text-align: center;
+    font-family: 'Dayrom';
+    font-size: 15px;
+    }
+.zozor_classe {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: justify;
+    border: 1px solid black;
+    }
+
+aside p {
+    text-align: justify;
+}
+
+.carré{
+    display: flex;
+    justify-content: space-around;
+}
+/* Footer */
+
+footer {
+    display: flex;
+    width: 900px;
+    margin: auto;
+    font-size: 0.8em;
+    font-family: 'Dayrom';
+}
+
+#tweet {
+    width: 290px;
+}
+#mes_photos {
+    width: 290px;
+}
+
+.pho {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mes_photos p{
+    border: 1px solid black;
+} 
+#mes_amis {
+    margin-left: 30px;
+}
+#listes_amis{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+#mes_amis ul{
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+#mes_amis a{
+    width: 330px;
+    text-decoration: none;
+    color: #760001;
+}
